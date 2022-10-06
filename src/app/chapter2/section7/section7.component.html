@@ -1,0 +1,112 @@
+<div>
+    <button mat-button routerLink="/section6">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section8">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        TYPES AND CONVERSIONS
+    </h1>
+    <p class="sub-intro-chapter-2">
+        IMPLICIT CONVERSIONS HAPPEN AUTOMATICALLY, AND EXPLICIT CONVERSIONS REQUIRE A 
+        CAST CONVERSION.
+    </p>
+
+    <h1 class="intro-chapter-2">
+        VALUE TYPES VS REFERENCE TYPES
+    </h1>
+    <p class="sub-intro-chapter-2">
+        ALL C# TYPES FALL INTO THE FOLLOWING CATEGORIES:
+        <br>
+        <br>
+        1. VALUE TYPES.
+        <br>
+        2. REFERENCE TYPES.
+        <br>
+        3. GENERIC TYPE PARAMETERS.
+        <br>
+        4. PONTER TYPES.
+    </p>
+    <p class="sub-intro-chapter-2">
+        - VALUE TYPES COMPRISE MOST BUILT-IN TYPES.
+        <br>
+        - REFERENCE TYPES COMPRISE ALL CLASS, ARRAY, DELEGATE, AND INTERFACE TYPES.
+        <br>
+        - THE FUNDAMENTAL DIFFERENCE BETWEEN VALUE TYPES AND REFERENCE TYPES IS HOW 
+        THEY ARE HANDLED IN MEMORY.
+    </p>
+
+    <h1 class="intro-chapter-2">
+        VALUE TYPES
+    </h1>
+    <p class="sub-intro-chapter-2">
+        THE CONTENT OF A VALUE TYPE VARIABLE OR CONSTANT IS SIMPLY A VALUE. 
+        THE ASSIGMENT OF A VALUE-TYPE INSTANCE ALWAYS COPIES THE INSTANCE.
+        <br>
+        <br>
+        # REGION OF MEMORY  <font color=green>-> &AWL_12334</font>
+        <br>
+        # VALUE-TYPE OF THAT REGION <font color=green>-> 12</font>
+        <br>
+        # REPRESENT IN C# CODE <font color=green>-> int variable_1 = 12;</font>
+        <br>
+        <br>
+        <font color=blue>int</font> variable_2 = variable_1; 
+        <font color=green>
+            // INTERNALLY WHAT HAPPENS IS THAT ANOTHER REGION IS USED TO STORE (COPY) variable_1;
+        </font>
+        <br>
+        <br>
+        # REGION OF MEMORY <font color=green>-> &AWL_56789</font>
+        <br>
+        # VALUE-TYPE OF THAT REGION <font color=green>-> 12</font>
+        <br>
+        # REPRESENT IN C# CODE <font color=green>-> int variable_2 = 12;</font>
+    </p>
+
+    <h1 class="intro-chapter-2">
+        REFERENCE TYPES
+    </h1>
+    <p class="sub-intro-chapter-2">
+        A REFERENCE TYPE IS MORE COMPLEX THAN A VALUE TYPE, HAVING 2 PARTS: AN 
+        OBJECT AND THE REFERENCE TO THAT OBJECT.
+        <br>
+        <br>
+        <font color=green>REFERENCE -> POINTS TO AN OBJECT</font> **
+        INSTEAD OF COPYING.
+        <br>
+        <br>
+        ASSIGNING THE REFERENCE-TYPE VARIABLE COPIES THE REFERENCE, NOT THE OBJECT INSTANCE. 
+        THIS ALLOWS MULTIPLE VARIABLES TO REFER TO THE SAME OBJECT.
+        <br>
+        <br>
+        NULL: INDICATING THAT THE REFERENCE POINTS TO NO OBJECT.
+    </p>
+
+    <h1 class="intro-chapter-2">
+        STORAGE OVERHEAD
+    </h1>
+    <p class="sub-intro-chapter-2">
+        VALUE-TYPE INSTANCES OCCUPY PRECISELY THE MEMORY REQUIRED TO STORE THEIR FIELDS.
+    </p>
+    <p class="sub-intro-chapter-2">
+        REFERENCE TYPES REQUIRE SEPARATE ALLOCATIONS OF MEMORY FOR THE REFERENCE AND OBJECT. 
+        THE OBJECT CONSUMES AS MANY BYTES AS ITS FIELDS, PLUS ADDITIONAL ADMINISTRATIVE 
+        OVERHEAD.
+        <br>
+        <br>
+        EXAMPLES OF A REFERENCE TYPES:
+        <br>
+        <br>
+        1. STRINGS
+        <br>
+        2. OBJECTS
+    </p>
+</div>

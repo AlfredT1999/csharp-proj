@@ -1,0 +1,92 @@
+<div>
+    <button mat-button routerLink="/section8">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section10">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        ARRAYS
+    </h1>
+    <p class="sub-intro-chapter-2">
+        AN ARRAY INITIALIZATION EXPRESSION LETS YOU DECLARE AND POPULATE AN ARRAY IN A SINGLE STEP:
+        <br>
+        <br>
+        <font color=blue>char[] </font>
+        vowels = 
+        <font color=blue>new char[] {{ squareBraketOpen }} </font>
+        'a', 'e', 'i', 'o', 'u'
+        <font color=blue>}</font>;
+        <br>
+        <br>
+        OR SIMPLY:
+        <br>
+        <br>
+        <font color=blue>char[] </font>
+        vowels = 
+        <font color=blue>{{ squareBraketOpen }} </font>
+        'a', 'e', 'i', 'o', 'u'
+        <font color=blue>}</font>;
+    </p>
+
+    <h1 class="intro-chapter-2">
+        DEFAULT ELEMENT INITIALIZATION
+    </h1>
+    <p class="sub-intro-chapter-2">
+        THE DEFAULT ELEMENT FOR EACH ELEMENT WILL BE 0:
+        <br>
+        <br>
+        int[] a = new int[1000];
+        <br>
+	    Console.Write(a[123]); // Equals to 0
+    </p>
+    <p class="sub-intro-chapter-2">
+        * WHEN THE ELEMENT TYPE IS A VALUE TYPE, EACH ELEMENT VALUE IS ALLOCATED 
+        AS PART OF THE ARRAY, AS SHOWN: 
+        <br>
+        <br>
+        // VALUE-TYPE:
+        <br>
+        Point[] a = new Point[1000];
+        <br>
+        int x = a[500].X; // 0
+        <br>
+        <br>
+        public Struct Point {{ squareBraketOpen }} public int X, int Y; }
+    </p>
+    <p class="sub-intro-chapter-2">
+        * HAD POINT BEEN A CLASS, CREATING THE ARRAY WOULD HAVE MERELY ALLOCATED 
+        1,000 NULL REFERENCES: 
+        <br>
+        <br>
+        // REFERENCE-TYPE:
+        <br>
+        Point[] a = new Point[1000];
+        <br>
+        int x = a[500].X; // RUNTIME ERROR, NullReferenceException
+        <br>
+        <br>
+        public class Point {{ squareBraketOpen }}    public int X, int Y; }
+        <br>
+        <br>
+        TO AVOID THIS ERROR, WE MUST EXPLICITLY INSTANTIATE 1,000 Points 
+        after instantiating the array:
+        <br>
+        <br>
+        for(int i = 0; i < a.Length; i++) {{ squareBraketOpen }} 
+        a[i] = new Point(); }
+        <br>
+        <br>
+        AN ARRAY ITSELF IS ALWAYS A REFERENCE TYPE OBJECT, REGARDLESS OF THE ELEMENT TYPE.
+        FOR INSTANCE THE FOLLOWING IS LEGAL:
+        <br>
+        <br>
+        int[] a = null;
+    </p>
+</div>

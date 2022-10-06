@@ -1,0 +1,62 @@
+<div>
+    <button mat-button routerLink="/section7">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section9">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        NUMERIC LITERALS
+    </h1>
+    <p class="sub-intro-chapter-2">
+        AN UNDERSCORE CAN BE INSERTED ANYWHERE WITHIN A NUMERIC LITERAL TO MAKE IT 
+        MORE READABLE:
+        <br>
+        <br>
+        <font color=blue>int </font>million = 1_000_000;
+    </p>
+
+    <h1 class="intro-chapter-2">
+        NUMERIC SUFFIXES
+    </h1>
+    <p class="sub-intro-chapter-2">
+        NUMERIC SUFFIXES EXPLICITLY DEFINE THE TYPE OF A LITERAL:
+        <br>
+        <br>
+        float variable_1 = 1.0f; 
+        <br>
+	    // or:
+        <br>
+	    float variable_1 = 1.0F; 
+        <br>
+        <br>
+        THE F AND M SUFFIXES ARE THE MOST USEFUL AND SHOULD ALWAYS BE 
+        APPLIED WHEN SPECIFYING float OR decimal LITERALS.
+    </p>
+    
+    <h1 class="intro-chapter-2">
+        STRING INTERPOLATION
+    </h1>
+    <p class="sub-intro-chapter-2">
+        A STRING PRECEDED WITH THE $ CHARACTER IS CALLED AN INTERPOLATED STRING. 
+        INTERPOLATED STRINGS CAN INCLUDE EXPRESSIONS ENCLOSED IN BRACES:
+        <br>
+        <br>
+        int x = 4; 
+        <br>
+	    {{ consoleLog }}
+    </p>
+
+    <h1 class="intro-chapter-2">
+        STRING COMPARISONS
+    </h1>
+    <p class="sub-intro-chapter-2">
+        string does not support < and > operators for comparisons. You must use the string's CompareTo method.
+    </p>
+</div>
