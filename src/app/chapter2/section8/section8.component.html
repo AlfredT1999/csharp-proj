@@ -29,34 +29,38 @@
         NUMERIC SUFFIXES EXPLICITLY DEFINE THE TYPE OF A LITERAL:
         <br>
         <br>
-        float variable_1 = 1.0f; 
+        <font color=blue>float</font> variable_1 = 1.0f; 
         <br>
-	    // or:
+	    <font color=green>// or:</font>
         <br>
-	    float variable_1 = 1.0F; 
+	    <font color=blue>float</font> variable_1 = 1.0F; 
         <br>
         <br>
         THE F AND M SUFFIXES ARE THE MOST USEFUL AND SHOULD ALWAYS BE 
-        APPLIED WHEN SPECIFYING float OR decimal LITERALS.
+        APPLIED WHEN SPECIFYING <font color=blue>float</font> OR 
+        <font color=blue>decimal </font>LITERALS.
     </p>
     
     <h1 class="intro-chapter-2">
         STRING INTERPOLATION
     </h1>
     <p class="sub-intro-chapter-2">
-        A STRING PRECEDED WITH THE $ CHARACTER IS CALLED AN INTERPOLATED STRING. 
-        INTERPOLATED STRINGS CAN INCLUDE EXPRESSIONS ENCLOSED IN BRACES:
+        A STRING PRECEDED WITH THE $ CHARACTER IS CALLED AN 
+        INTERPOLATED STRING. INTERPOLATED STRINGS CAN INCLUDE EXPRESSIONS ENCLOSED IN BRACES:
         <br>
         <br>
-        int x = 4; 
+        <font color=blue>int</font> x = 4; 
         <br>
-	    {{ consoleLog }}
+        <font color=green>Console</font>.<font color=blue>Write</font>($"A square has
+	    {{ openBrace }}x} sides");
     </p>
 
     <h1 class="intro-chapter-2">
         STRING COMPARISONS
     </h1>
     <p class="sub-intro-chapter-2">
-        string does not support < and > operators for comparisons. You must use the string's CompareTo method.
+        <font color=blue>string</font> does not support < (less than)
+        and > (major than) operators for comparisons. 
+        You must use the string's <font color=#8B8000>CompareTo</font>() method.
     </p>
 </div>

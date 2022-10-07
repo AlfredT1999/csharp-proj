@@ -17,6 +17,20 @@
     <p class="sub-intro-chapter-2">
         IMPLICIT CONVERSIONS HAPPEN AUTOMATICALLY, AND EXPLICIT CONVERSIONS REQUIRE A 
         CAST CONVERSION.
+        <br>
+        <br>
+        # IMPLICIT (DONE BY RUNTIME AUTOMATICALLY):
+        <br>
+        <font color=blue>int</font> x = 100;
+        <br>
+        <font color=blue>double</font> d = x;
+        <br>
+        <br>
+        # EXPLICIT (CAST):
+        <br>
+        <font color=blue>double</font> d = 100.25;
+        <br>
+        <font color=blue>int</font> x = (<font color=blue>double</font>)d;
     </p>
 
     <h1 class="intro-chapter-2">
@@ -32,7 +46,7 @@
         <br>
         3. GENERIC TYPE PARAMETERS.
         <br>
-        4. PONTER TYPES.
+        4. POINTER TYPES.
     </p>
     <p class="sub-intro-chapter-2">
         - VALUE TYPES COMPRISE MOST BUILT-IN TYPES.
@@ -51,6 +65,8 @@
         THE ASSIGMENT OF A VALUE-TYPE INSTANCE ALWAYS COPIES THE INSTANCE.
         <br>
         <br>
+        # variable_1:
+        <br>
         # REGION OF MEMORY  <font color=green>-> &AWL_12334</font>
         <br>
         # VALUE-TYPE OF THAT REGION <font color=green>-> 12</font>
@@ -60,9 +76,12 @@
         <br>
         <font color=blue>int</font> variable_2 = variable_1; 
         <font color=green>
-            // INTERNALLY WHAT HAPPENS IS THAT ANOTHER REGION IS USED TO STORE (COPY) variable_1;
+            // INTERNALLY WHAT HAPPENS IS THAT ANOTHER REGION IS USED TO STORE (A COPY) 
+            OF variable_1
         </font>
         <br>
+        <br>
+        # variable_2:
         <br>
         # REGION OF MEMORY <font color=green>-> &AWL_56789</font>
         <br>
@@ -87,14 +106,17 @@
         THIS ALLOWS MULTIPLE VARIABLES TO REFER TO THE SAME OBJECT.
         <br>
         <br>
-        NULL: INDICATING THAT THE REFERENCE POINTS TO NO OBJECT.
+        # THE <font color=blue>null</font> RESERVED WORD: INDICATING THAT THE REFERENCE POINTS TO NO OBJECT.
     </p>
 
     <h1 class="intro-chapter-2">
         STORAGE OVERHEAD
     </h1>
     <p class="sub-intro-chapter-2">
-        VALUE-TYPE INSTANCES OCCUPY PRECISELY THE MEMORY REQUIRED TO STORE THEIR FIELDS.
+        VALUE-TYPE INSTANCES OCCUPY PRECISELY THE MEMORY REQUIRED TO STORE THEIR FIELDS:
+        <br>
+        <br>
+        <img src="assets/DataTypes.jpg" alt="value-type">
     </p>
     <p class="sub-intro-chapter-2">
         REFERENCE TYPES REQUIRE SEPARATE ALLOCATIONS OF MEMORY FOR THE REFERENCE AND OBJECT. 
@@ -108,5 +130,8 @@
         1. STRINGS
         <br>
         2. OBJECTS
+        <br>
+        <br>
+        <img src="assets/raferenceType.png" alt="value-type">
     </p>
 </div>

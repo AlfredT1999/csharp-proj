@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section8.component.scss']
 })
 export class Section8Component implements OnInit {
-  consoleLog = 'Console.Write($"A square has {x} sides");';
+  openBrace = '{';
   constructor() { }
 
   ngOnInit(): void {

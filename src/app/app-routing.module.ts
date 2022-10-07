@@ -3,6 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { Chapter2Component } from './chapter2/chapter2.component';
 import { Section1Component } from './chapter2/section1/section1.component';
 import { Section10Component } from './chapter2/section10/section10.component';
+import { Section11Component } from './chapter2/section11/section11.component';
+import { Section12Component } from './chapter2/section12/section12.component';
+import { Section13Component } from './chapter2/section13/section13.component';
+import { Section14Component } from './chapter2/section14/section14.component';
+import { Section15Component } from './chapter2/section15/section15.component';
 import { Section2Component } from './chapter2/section2/section2.component';
 import { Section3Component } from './chapter2/section3/section3.component';
 import { Section4Component } from './chapter2/section4/section4.component';
@@ -56,6 +61,26 @@ const routes: Routes = [
   {
     path: 'section10',
     component: Section10Component
+  },
+  {
+    path: 'section11',
+    component: Section11Component
+  },
+  {
+    path: 'section12',
+    component: Section12Component
+  },
+  {
+    path: 'section13',
+    component: Section13Component
+  },
+  {
+    path: 'section14',
+    component: Section14Component
+  },
+  {
+    path: 'section15',
+    component: Section15Component
   }
 ];
 

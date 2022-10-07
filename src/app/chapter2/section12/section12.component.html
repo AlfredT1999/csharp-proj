@@ -1,0 +1,86 @@
+<div>
+    <button mat-button routerLink="/section11">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section13">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        THE STACK AND THE HEAP 
+    </h1>
+    <p class="sub-intro-chapter-2">
+        THE STACK AND THE HEAP ARE PLACES WHERE VARIABLES RESIDE. EACH HAS VERY DIFFERENT LIFETIME SEMANTICS.
+    </p>
+    
+    <h2 class="intro-chapter-2">
+        # Stack:
+    </h2>
+    <p class="sub-intro-chapter-2">
+        IS A BLOCK OF MEMORY FOR STORING LOCAL VARIABLES AND PARAMETERS. 
+        THE STACK LOGICALLY GROWS AND SHRINKS AS A METHOD OR FUNCTION IS ENTERED AND EXITED:
+        <br>
+        <br>
+        static int Factorial (int x)
+        <br>
+        {{squareBraketOpen}}
+        <br>
+        &nbsp;if (x == 0) return 1; <br>
+        &nbsp;return x * Factorial (x-1);
+        <br>
+        }
+        <br>
+        <br>
+        EACH TIME THE METHOD IS ENTERED, A NEW INT IS ALLOCATED ON THE STACK, 
+        AND EACH TIME THE METHOD EXITS, THE INT IS DEALLOCATED.
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # HEAP:
+    </h2>
+    <p class="sub-intro-chapter-2">
+        IS THE MEMORY IN WHICH OBJECTS (REFERENCE-TYPE INSTANCES) RESIDE. 
+        WHENEVER A NEW OBJECT IS CREATED, IT IS ALLOCATED ON THE HEAP, 
+        AND A REFERENCE TO THAT OBJECT IS RETURNED.
+
+    </p>
+    <p class="sub-intro-chapter-2">
+        IMPLICIT TYPING CAN BE TAKEN ONE STAGE FURTHER WITH ARRAYS: 
+        YOU CAN OMMIT THE TYPE QUALIFIER AFTER THE new keyword AND HAVE 
+        THE COMPILER INFER THE ARRAY TYPE:
+        <br>
+        <br>
+        THE RUNTIME HAS A GARBAGE COLLECTOR THAT PERIODICALLY DEALLOCATE OBJECTS 
+        FROM THE HEAP, SO YOUR PROGRAM DOES NOT RUN OUT OF MEMORY. AN OBJECT IS 
+        ELIGIBLE FOR DEALLOCATION AS SOON AS IT'S NOT REFERENCED BY 
+        ANYTHING THAT'S ITSELF ALIVE.
+    </p>
+    <p class="sub-intro-chapter-2">
+        YOU CAN'T EXPLICITLY DELETE OBJECTS IN C#, AS YOU CAN IN C++. AN 
+        UNREFERENCED OBJECT IS EVENTUALLY COLLECTED BY THE GARBAGE COLLECTOR.
+    </p>
+    <p class="sub-intro-chapter-2">
+        THE HEAP ALSO STORES STATIC FIELDS. UNLIKE OBJECTS ALLOCATED ON THE HEAP 
+        (WHICH CAN BE GARBAGE-COLLECTED), THESE LIVE UNTIL THE PROCESS ENDS.
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # DEFINITE ASSIGNMENT:
+    </h2>
+    <p class="intro-chapter-2">
+        C# ENFORCES A DEFINITE ASSIGNMENT POLICY. DEFINITE ASSIGMENT HAS THREE IMPLICATIONS:
+        <br>
+        <br>
+        1. LOCAL VARIABLES MUST BE ASSIGNED A VALUE BEFORE THEY CAN BE READ.
+        <br>
+        2. FUNCTION ARGUMENTS MUST BE SUPPLIED WHEN A METHOD IS CALLED.
+        <br>
+        3. ALL OTHER VARIABLES (SUCH AS FIELDS AND ARRAY ELEMENTS) ARE AUTOMATICALLY 
+        INITIALIZED BY THE RUNTIME.
+    </p>
+</div>

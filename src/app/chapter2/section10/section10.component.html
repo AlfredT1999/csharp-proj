@@ -1,1 +1,65 @@
-<p>section10 works!</p>
+<div>
+    <button mat-button routerLink="/section9">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section11">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        INDICES AND RANGES
+    </h1>
+    <h2 class="intro-chapter-2">
+        # INDICES:
+    </h2>
+    <p class="sub-intro-chapter-2">
+        SIMPLIFY WORKING WITH ELEMENTS OR PORTIONS OF AN ARRAY.
+        INDICES LET YOU REFER TO ELEMENTS RELATIVE TO THE END OF AN ARRAY, WITH THE ^ OPERATOR:
+        <br>
+        <br>
+        char[] vowels = new char[] {{squareBraketOpen}} 'a','e','i','o','u'};
+        <br>
+        char lastElement = vowels [^1]; // 'u'
+        <br>
+        char secondToLast = vowels [^2]; // 'o'
+        <br>
+        <br>
+        C# IMPLEMENTS INDICES WITH THE HELP OF THE Index type:
+        <br>
+        <br>
+        Index first = 0;
+        <br>
+        Index last = ^1;
+        <br>
+        char firstElement = vowels [first]; // 'a'
+        <br>
+        char lastElement = vowels [last]; // 'u'
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # RANGES:
+    </h2>
+    <p class="sub-intro-chapter-2">
+        RANGES LET YOU SLICE AN ARRAY BY USING THE .. OPERATOR:
+        <br>
+        <br>
+        char[] firstTwo = vowels [..2]; // 'a', 'e'
+        <br>
+        char[] lastThree = vowels [2..]; // 'i', 'o', 'u'
+        <br>
+        char[] middleOne = vowels [2..3]; // 'i'
+        <br>
+        <br>
+        C# IMPLEMENTS RANGES WITH THE HELP OF THE Range TYPE;
+        <br>
+        <br>
+        Range firstTwoRange = 0..2;
+        <br>
+	    char[] firstTwo = vowels [firstTwoRange]; // 'a', 'e'
+    </p>
+</div>

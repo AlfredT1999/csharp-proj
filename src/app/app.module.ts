@@ -21,6 +21,11 @@ import { Section7Component } from './chapter2/section7/section7.component';
 import { Section8Component } from './chapter2/section8/section8.component';
 import { Section9Component } from './chapter2/section9/section9.component';
 import { Section10Component } from './chapter2/section10/section10.component';
+import { Section11Component } from './chapter2/section11/section11.component';
+import { Section12Component } from './chapter2/section12/section12.component';
+import { Section13Component } from './chapter2/section13/section13.component';
+import { Section14Component } from './chapter2/section14/section14.component';
+import { Section15Component } from './chapter2/section15/section15.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +41,12 @@ import { Section10Component } from './chapter2/section10/section10.component';
     Section7Component,
     Section8Component,
     Section9Component,
-    Section10Component
+    Section10Component,
+    Section11Component,
+    Section12Component,
+    Section13Component,
+    Section14Component,
+    Section15Component
   ],
   imports: [
     BrowserModule,
