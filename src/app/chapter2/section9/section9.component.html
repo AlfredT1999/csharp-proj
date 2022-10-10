@@ -15,7 +15,8 @@
         ARRAYS
     </h1>
     <p class="sub-intro-chapter-2">
-        AN ARRAY INITIALIZATION EXPRESSION LETS YOU DECLARE AND POPULATE AN ARRAY IN A SINGLE STEP:
+        AN ARRAY INITIALIZATION EXPRESSION LETS YOU DECLARE AND POPULATE AN ARRAY 
+        IN A SINGLE STEP:
         <br>
         <br>
         <font color=blue>char[] </font>
@@ -25,7 +26,7 @@
         <font color=blue>}</font>;
         <br>
         <br>
-        OR SIMPLY:
+        <font color=green>// OR SIMPLY:</font>
         <br>
         <br>
         <font color=blue>char[] </font>
@@ -42,51 +43,61 @@
         THE DEFAULT ELEMENT FOR EACH ELEMENT WILL BE 0:
         <br>
         <br>
-        int[] a = new int[1000];
+        <font color=blue>int</font>[] a = <font color=blue>new </font> 
+        <font color=blue>int</font>[1000];
         <br>
-	    Console.Write(a[123]); // Equals to 0
+        <font color=green>Console</font>.<font color=blue>Write</font>(a[123]);
+        <font color=green>// Equals to 0</font>
     </p>
     <p class="sub-intro-chapter-2">
         * WHEN THE ELEMENT TYPE IS A VALUE TYPE, EACH ELEMENT VALUE IS ALLOCATED 
         AS PART OF THE ARRAY, AS SHOWN: 
         <br>
         <br>
-        // VALUE-TYPE:
+        <font color=green>// VALUE-TYPE:</font>
         <br>
-        Point[] a = new Point[1000];
+        <font color=blue>Point</font>[] a = <font color=blue>new Point</font>[1000];
         <br>
-        int x = a[500].X; // 0
+        <font color=blue>int</font> x = a[500].X; <font color=green>// 0</font>
         <br>
         <br>
-        public Struct Point {{ squareBraketOpen }} public int X, int Y; }
+        <font color=blue>public Struct </font> 
+        <font color=green>Point</font> {{ squareBraketOpen }} 
+        <font color=blue>public int</font> X, 
+        <font color=blue>int</font> Y; }
     </p>
     <p class="sub-intro-chapter-2">
         * HAD POINT BEEN A CLASS, CREATING THE ARRAY WOULD HAVE MERELY ALLOCATED 
         1,000 NULL REFERENCES: 
         <br>
         <br>
-        // REFERENCE-TYPE:
+        <font color=green>// REFERENCE-TYPE: </font> 
         <br>
-        Point[] a = new Point[1000];
+        <font color=blue>Point</font>[] a = <font color=blue>new Point</font>[1000];
         <br>
-        int x = a[500].X; // RUNTIME ERROR, NullReferenceException
+        <font color=blue>int</font> x = a[500].X; 
+        <font color=green>// RUNTIME ERROR, NullReferenceException</font>
         <br>
         <br>
-        public class Point {{ squareBraketOpen }}    public int X, int Y; }
+        <font color=blue>public class </font>
+        <font color=green>Point</font> 
+        {{ squareBraketOpen }} <font color=blue>public int </font>X, 
+        <font color=blue>int </font>Y; }
         <br>
         <br>
         TO AVOID THIS ERROR, WE MUST EXPLICITLY INSTANTIATE 1,000 Points 
         after instantiating the array:
         <br>
         <br>
-        for(int i = 0; i < a.Length; i++) {{ squareBraketOpen }} 
-        a[i] = new Point(); }
+        <font color=blue>for</font>
+        (<font color=blue>int</font> i = 0; i < a.Length; i++) {{ squareBraketOpen }} 
+        a[i] = <font color=blue>new Point</font>(); }
         <br>
         <br>
         AN ARRAY ITSELF IS ALWAYS A REFERENCE TYPE OBJECT, REGARDLESS OF THE ELEMENT TYPE.
         FOR INSTANCE THE FOLLOWING IS LEGAL:
         <br>
         <br>
-        int[] a = null;
+        <font color=blue>int</font>[] a = <font color=blue>null</font>;
     </p>
 </div>

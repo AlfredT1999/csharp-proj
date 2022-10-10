@@ -22,23 +22,28 @@
         INDICES LET YOU REFER TO ELEMENTS RELATIVE TO THE END OF AN ARRAY, WITH THE ^ OPERATOR:
         <br>
         <br>
-        char[] vowels = new char[] {{squareBraketOpen}} 'a','e','i','o','u'};
+        <font color=blue>char</font>[] vowels = 
+        <font color=blue>new char</font>[] {{squareBraketOpen}} 'a','e','i','o','u'};
         <br>
-        char lastElement = vowels [^1]; // 'u'
+        <font color=blue>char</font> lastElement = vowels [^1]; 
+        <font color=green>// 'u'</font>
         <br>
-        char secondToLast = vowels [^2]; // 'o'
+        <font color=blue>char</font> secondToLast = vowels [^2]; 
+        <font color=green>// 'o'</font>
         <br>
         <br>
-        C# IMPLEMENTS INDICES WITH THE HELP OF THE Index type:
+        C# IMPLEMENTS INDICES WITH THE HELP OF THE <font color=green>Index</font> type:
         <br>
         <br>
-        Index first = 0;
+        <font color=green>Index</font> first = 0;
         <br>
-        Index last = ^1;
+        <font color=green>Index</font> last = ^1;
         <br>
-        char firstElement = vowels [first]; // 'a'
+        <font color=blue>char</font> firstElement = vowels [first]; 
+        <font color=green>// 'a'</font>
         <br>
-        char lastElement = vowels [last]; // 'u'
+        <font color=blue>char</font> lastElement = vowels [last]; 
+        <font color=green>// 'u'</font>
     </p>
 
     <h2 class="intro-chapter-2">
@@ -48,18 +53,22 @@
         RANGES LET YOU SLICE AN ARRAY BY USING THE .. OPERATOR:
         <br>
         <br>
-        char[] firstTwo = vowels [..2]; // 'a', 'e'
+        <font color=blue>char</font>[] firstTwo = vowels [..2]; 
+        <font color=green>// 'a', 'e'</font>
         <br>
-        char[] lastThree = vowels [2..]; // 'i', 'o', 'u'
+        <font color=blue>char</font>[] lastThree = vowels [2..]; 
+        <font color=green>// 'i', 'o', 'u'</font>
         <br>
-        char[] middleOne = vowels [2..3]; // 'i'
+        <font color=blue>char</font>[] middleOne = vowels [2..3]; 
+        <font color=green>// 'i'</font>
         <br>
         <br>
-        C# IMPLEMENTS RANGES WITH THE HELP OF THE Range TYPE;
+        C# IMPLEMENTS RANGES WITH THE HELP OF THE <font color=green>Range</font> TYPE;
         <br>
         <br>
-        Range firstTwoRange = 0..2;
+        <font color=green>Range</font> firstTwoRange = 0..2;
         <br>
-	    char[] firstTwo = vowels [firstTwoRange]; // 'a', 'e'
+	    <font color=blue>char</font>[] firstTwo = vowels [firstTwoRange]; 
+        <font color=green>// 'a', 'e'</font>
     </p>
 </div>

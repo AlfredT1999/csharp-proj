@@ -15,50 +15,56 @@
         MULTIDIMENSIONAL ARRAYS
     </h1>
     <p class="sub-intro-chapter-2">
-        MULTIDIMENSIONAL ARRAYS COME IN TWO VARIETIES: RECTANGULAR AND JAGGED. 
+        MULTIDIMENSIONAL ARRAYS COME IN TWO VARIETIES; RECTANGULAR AND JAGGED. 
         RECTANGULAR ARRAYS REPRESENT AN N-DIMENSIONAL BLOCK OF MEMORY, AND JAGGED
         ARRAYS ARE ARRAYS OF ARRAYS.
     </p>
     <p class="sub-intro-chapter-2">
-        RECTANGULAR ARRAYS: TWO-DIMENSIONAL ARRAY. 2D ARRAY:
+        # RECTANGULAR ARRAYS: TWO-DIMENSIONAL ARRAY. 2D ARRAY:
         <br>
         <br>
-        int[,] matrix = new int[3,3];
+        <font color=blue>int</font>[,] matrix = <font color=blue>new int</font>[3,3];
     </p>
     <p class="sub-intro-chapter-2">
-        JAGGED ARRAYS: THE INNER DIMENSIONS AREN'T SPECIFIED IN THE DECLARATION BECAUSE, 
+        # JAGGED ARRAYS: THE INNER DIMENSIONS AREN'T SPECIFIED IN THE DECLARATION BECAUSE, 
         UNLIKE A RECTANGULAR ARRAY, EACH INNER ARRAY CAN BE AN ARBITRARY LENGTH. 
-        EACH INNER ARRAY IS IMPLICITLY INITIALIZED TO NULL RATHER THAN EMPTY ARRAY. 
+        EACH INNER ARRAY IS IMPLICITLY INITIALIZED TO <font color=blue>NULL</font> 
+        RATHER THAN EMPTY ARRAY. 
         YOU MUST MANUALLY CREATE EACH INNER ARRAY:
         <br>
         <br>
-        for (int i = 0; i < matrix.Length; i++)
+        <font color=blue>for</font>(<font color=blue>int</font> i = 0; i < matrix.Length; i++)
         <br>
         {{squareBraketOpen}}
         <br>
-        &nbsp;matrix[i] = new int[3]; // Create inner array
-        &nbsp;matrix[i][j] = i * 3 + j;
+        &nbsp;&nbsp;matrix[i] = <font color=blue>new</font> int[3]; 
+        <font color=green>// Create inner array</font>
+        <br>
+        &nbsp;&nbsp;matrix[i][j] = i * 3 + j;
         <br>
         }
     </p>
     <p class="sub-intro-chapter-2">
-        # TO INITIALIZE A JAGGED ARRAY:
+        - TO INITIALIZE A JAGGED ARRAY:
         <br>
         <br>
-        int[][] matrix = new int[][] <br>
+        <font color=blue>int</font>[][] matrix = 
+        <font color=blue>new int</font>[][] <br>
         {{squareBraketOpen}} <br>
-        &nbsp;new int[] {{squareBraketOpen}} 0,1,2 }, <br>
-        &nbsp;new int[] {{squareBraketOpen}} 3,4,5 }, <br>
-        &nbsp;new int[] {{squareBraketOpen}} 6,7,8,9 {{squareBraketClose}} <br>
+        &nbsp;&nbsp;<font color=blue>new int</font>[] {{squareBraketOpen}} 3,4,5 }, <br>
+        &nbsp;&nbsp;<font color=blue>new int</font>[] {{squareBraketOpen}} 6,7,8,9 {{squareBraketClose}}, <br>
+        &nbsp;&nbsp;<font color=blue>new int</font>[] {{squareBraketOpen}} 0,1,2 }, <br>
         {{squareBraketClose}};
     </p>
     <p class="sub-intro-chapter-2">
         IMPLICIT TYPING CAN BE TAKEN ONE STAGE FURTHER WITH ARRAYS: 
-        YOU CAN OMMIT THE TYPE QUALIFIER AFTER THE new keyword AND HAVE 
+        YOU CAN OMMIT THE TYPE QUALIFIER AFTER THE <font color=blue>new</font> KEYWORD AND HAVE 
         THE COMPILER INFER THE ARRAY TYPE:
         <br>
         <br>
-        var vowels = new[] {{squareBraketOpen}} 'a','e','i','o','u' }; // COMPILER INFERS char[]
+        <font color=blue>var</font> vowels = 
+        <font color=blue>new</font>[] {{squareBraketOpen}} 'a','e','i','o','u' }; 
+        <font color=green>// COMPILER INFERS char[]</font>
     </p>
     <p class="sub-intro-chapter-2">
         # BOUNDS CHECKING 

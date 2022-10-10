@@ -19,19 +19,21 @@
     </p>
     
     <h2 class="intro-chapter-2">
-        # Stack:
+        # STACK:
     </h2>
     <p class="sub-intro-chapter-2">
         IS A BLOCK OF MEMORY FOR STORING LOCAL VARIABLES AND PARAMETERS. 
         THE STACK LOGICALLY GROWS AND SHRINKS AS A METHOD OR FUNCTION IS ENTERED AND EXITED:
         <br>
         <br>
-        static int Factorial (int x)
+        <font color=blue>static int</font> Factorial(<font color=blue>int</font> x)
         <br>
         {{squareBraketOpen}}
         <br>
-        &nbsp;if (x == 0) return 1; <br>
-        &nbsp;return x * Factorial (x-1);
+        &nbsp;&nbsp;<font color=red>if</font>(x == 0) <font color=red>return </font> 1; 
+        <br>
+        <br>
+        &nbsp;&nbsp;<font color=red>return</font> x * Factorial (x-1);
         <br>
         }
         <br>
@@ -50,11 +52,6 @@
 
     </p>
     <p class="sub-intro-chapter-2">
-        IMPLICIT TYPING CAN BE TAKEN ONE STAGE FURTHER WITH ARRAYS: 
-        YOU CAN OMMIT THE TYPE QUALIFIER AFTER THE new keyword AND HAVE 
-        THE COMPILER INFER THE ARRAY TYPE:
-        <br>
-        <br>
         THE RUNTIME HAS A GARBAGE COLLECTOR THAT PERIODICALLY DEALLOCATE OBJECTS 
         FROM THE HEAP, SO YOUR PROGRAM DOES NOT RUN OUT OF MEMORY. AN OBJECT IS 
         ELIGIBLE FOR DEALLOCATION AS SOON AS IT'S NOT REFERENCED BY 
@@ -68,6 +65,7 @@
         THE HEAP ALSO STORES STATIC FIELDS. UNLIKE OBJECTS ALLOCATED ON THE HEAP 
         (WHICH CAN BE GARBAGE-COLLECTED), THESE LIVE UNTIL THE PROCESS ENDS.
     </p>
+    <img src="assets/stackmemory.jpg" alt="type-memory">
 
     <h2 class="intro-chapter-2">
         # DEFINITE ASSIGNMENT:
