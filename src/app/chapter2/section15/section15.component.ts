@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section15.component.scss']
 })
 export class Section15Component implements OnInit {
+  squareBraketOpen = '{';
 
   constructor() { }
 

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-section13',
-  templateUrl: './section13.component.html',
-  styleUrls: ['./section13.component.scss']
+  selector: 'app-section17',
+  templateUrl: './section17.component.html',
+  styleUrls: ['./section17.component.scss']
 })
-export class Section13Component implements OnInit {
+export class Section17Component implements OnInit {
   squareBraketOpen = '{';
   squareBraketClose = '}';
 

@@ -1,1 +1,61 @@
-<p>section15 works!</p>
+<div>
+    <button mat-button routerLink="/section14">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section16">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        THE <font color=blue>ref</font> MODIFIER
+    </h1>
+    <p class="sub-intro-chapter-2">
+        TO PASS BY REFERENCE, C# PROVIDES THE ref PARAMETER MODIFIER; 
+        p AND x REFER TO THE SAME MEMORY LOCATIONS:
+        <br>
+        <br>
+        <font color=green>// Pasing by reference:</font>
+        <br>
+        <font color=blue>int</font> x = 8;
+        <br>
+        <br>
+        <font color=#8B8000>Foo</font>(<font color=blue>ref </font> x);
+        <font color=green>// Ask Foo to deal directly with x</font>
+        <br>
+        <br>
+        <font color=green>Console</font>.<font color=blue>WriteLine</font>(x); 
+        <font color=green>// x is now 9</font>
+        <br>
+        <br>
+        <font color=blue>static void </font><font color=#8B8000>Foo</font>(<font color=blue>ref int</font> p)
+        <br>
+        {{ squareBraketOpen }}
+        <br>
+        &nbsp;&nbsp;p = p + 1; <font color=green>// Increment p by 1</font>
+        <br>
+        &nbsp;&nbsp;<font color=green>Console</font>.<font color=blue>WriteLine</font>(p);
+        <font color=green>// Write p to screen</font>
+        <br>
+        }
+        <br>
+        <br>
+        <font color=green>
+            // Output :
+            <br>
+            // 9
+            <br>
+            // 9
+        </font>
+        <br>
+        <br>
+        - A PARAMETER CAN BE PASSED BY REFERENCE OR BY VALUE, REGARDLESS OF 
+        WHETHER THE PARAMETER TYPE IS A REFRENCE TYPE OR A VALUE TYPE.
+        <br>
+        <img src="assets/animation.gif" alt="animation">
+    </p>
+</div>

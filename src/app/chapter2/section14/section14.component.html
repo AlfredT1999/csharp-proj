@@ -1,1 +1,106 @@
-<p>section14 works!</p>
+<div>
+    <button mat-button routerLink="/section13">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section15">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        PASSING ARGUMENTS BY VALUE
+    </h1>
+    <p class="sub-intro-chapter-2">
+        ARGUMENTS IN C# ARE PASSED BY VALUE. THIS MEANS THAT A COPY OF THE 
+        VALUE IS CREATED WHEN PASSED TO THE METHOD:
+        <br>
+        <br>
+        <font color=green>// Passing by value:</font>
+        <br>
+        <font color=blue>int</font> x = 8;
+        <br>
+        <br>
+        <font color=#8B8000>Foo</font>(x);<font color=green>// Make a copy of x</font>
+        <br>
+        <br>
+        <font color=green>Console</font>.<font color=blue>WriteLine</font>(x); 
+        <font color=green>// x will still be 8</font>
+        <br>
+        <br>
+        <font color=blue>static void </font><font color=#8B8000>Foo</font>(<font color=blue>int</font> p)
+        <br>
+        {{ squareBraketOpen }}
+        <br>
+        &nbsp;&nbsp;p = p + 1; <font color=green>// Increment p by 1</font>
+        <br>
+        &nbsp;&nbsp;<font color=green>Console</font>.<font color=blue>WriteLine</font>(p);
+        <font color=green>// Write p to screen</font>
+        <br>
+        }
+        <br>
+        <br>
+        <font color=green>
+            // Output :
+            <br>
+            // 9
+            <br>
+            // 8
+        </font>
+        <br>
+        <br>
+        - ASSIGNING p A NEW VALUE DOES NOT CHANGE THE CONTENTS OF x, 
+        BECAUSE p AND x RESIDE IN DIFFERENT MEMORY LOCATIONS.
+        <br>
+        <img src="assets/passByValue.jpg" alt="pass-by-value">
+    </p>
+    
+    <br>
+    <h2 class="intro-chapter-2">
+        PASSING A REFERENCE-TYPE ARGUMENT BY VALUE COPIES THE REFERENCE BUT NOT THE OBJECT:
+    </h2>
+    <p class="sub-intro-chapter-2">
+        <font color=green>// Pasing a reference argument by value:</font>
+        <br>
+        <font color="blue">using </font>System.Text;
+        <br>
+        <br>
+        <font color=green>StringBuilder</font> sb = 
+        <font color="blue">new </font><font color=green>StringBuilder</font>();
+        <br>
+        <br>
+        <font color=#8B8000>Foo</font>(sb);
+        <br>
+        <br>
+        <font color=green>Console</font>.<font color=blue>WriteLine</font>(sb.<font color=#8B8000>ToString</font>()); 
+        <font color=green>// test</font>
+        <br>
+        <br>
+        <font color="blue">static void </font>
+        <font color=#8B8000>Foo</font>(<font color=green>StringBuilder</font> fooSB)
+        <br>
+        {{ squareBraketOpen }}
+        <br>
+        &nbsp;&nbsp;fooSB.<font color=#8B8000>Append</font>("test");
+        <br>
+        &nbsp;&nbsp;fooSB = <font color="blue">null</font>;
+        <font color=green>// JUST MODIFIES THE REFERENCE BUT NOT THE VALUE.</font>
+        <br>
+        }
+    </p>
+    <p class="sub-intro-chapter-2">
+        <font color=#8B8000>Foo</font>() SEES THE SAME <font color="green">StringBuilder</font> 
+        OBJECT WE INSTANTIATED (sb) BUT HAS AN INDEPENDENT REFERENCE TO IT. 
+        sb AND fooSB ARE SEPARATE VARIABLES THAT REFERENCE THE SAME 
+        <font color="green">StringBuilder</font> OBJECT.
+    </p>
+    <p class="sub-intro-chapter-2">
+        BECAUSE fooSB IS A COPY OF A REFERENCE, SETTING IT TO <font color="blue">null</font> 
+        DOESN'T MAKE sb <font color="blue">null</font>. 
+        (IF, HOWEVER, fooSB WAS DECLARED AND CALLED WITH THE <font color="blue">ref</font> MODIFIER,
+        sb WOULD BECOME <font color="blue">null</font>).
+    </p>
+</div>

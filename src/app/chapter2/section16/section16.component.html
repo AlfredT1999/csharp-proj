@@ -1,0 +1,118 @@
+<div>
+    <button mat-button routerLink="/section15">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section17">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        THE <font color=blue>out</font> MODIFIER
+    </h1>
+    <p class="sub-intro-chapter-2">
+        AN <font color=blue>out</font> ARGUMENT IS LIKE A 
+        <font color=blue>ref</font> ARGUMENT EXCEPT FOR THE FOLLOWING:
+        <br>
+        <br>
+        1. IT NEED NOT BE ASSIGNED BEFORE GOING INTO THE FUNCTION.
+        <br>
+        2. IT MUST BE ASSIGNED BEFORE IT COMES OUT OF THE FUNCTION.
+        <br>
+        <br>
+        THE <font color=blue>out</font> MODIFIER IS MOST COMMONLY USED TO GET 
+        MULTIPLE RETURN VALUES BACK FROM A METHOD:
+        <br>
+        <br> 
+        <font color=green>// out modifier:</font>
+        <br>
+        <font color=blue>string </font>a, b;
+        <br>
+        <br>
+        <font color=#8B8000>Split</font>("Stevie Ray Vaughn", 
+        <font color=blue>out</font> a, 
+        <font color=blue>out</font> b);
+        <br>
+        <br>
+        <font color=green>Console</font>.<font color=blue>WriteLine</font>(a); 
+        <font color=green>// Stevie Ray</font>
+        <br>
+        <font color=green>Console</font>.<font color=blue>WriteLine</font>(b); 
+        <font color=green>// Vaughn</font>
+        <br>
+        <br>
+        <font color=blue>void </font> <font color=#8B8000>Split</font>(<font color=blue>string</font> name, 
+        <font color=blue>out string</font> firstNames, 
+        <font color=blue>out string</font> lastName)
+        <br>
+        {{ squareBraketOpen }}
+        <br>
+        &nbsp;&nbsp;<font color=blue>int</font> i = name.<font color=#8B8000>LastIndexOf</font>(' ');
+        <br>
+        &nbsp;&nbsp;firstNames = name.<font color=#8B8000>Substring</font>(0, i);
+        <font color=green>// RETURNS</font>
+        <br>
+        &nbsp;&nbsp;lastName = name.<font color=#8B8000>Substring</font>(i + 1);
+        <font color=green>// RETURNS</font>
+        <br>
+        }
+        <br>
+        <br>
+        - LIKE A <font color=blue>ref</font> PARAMETER, 
+        AN <font color=blue>out</font> PARAMETER IS PASSED BY REFERENCE.
+    </p>
+
+    <h1 class="intro-chapter-2">
+        <font color=blue>out</font> VARIABLES AND DISCARDS
+    </h1>
+    <p class="sub-intro-chapter-2">
+        YOU CAN DECLARE VARIABLES ON THE FLY WHEN CALLING METHODS WITH <font color=blue>out</font> 
+        PARAMETERS. WE CAN REPLACE THE FIRST 2 LINES IN OUR PRECIDING EXAMPLE WITH THIS:
+        <br>
+        <br>
+        <font color=#8B8000>Split</font>("Stevie Ray Vaughn", 
+        <font color=blue>out string</font> a, 
+        <font color=blue>out string</font> b);
+        <br>
+        <br>
+        <font color=green>Console</font>.<font color=blue>WriteLine</font>(a); 
+        <font color=green>// Stevie Ray</font>
+        <br>
+        <font color=green>Console</font>.<font color=blue>WriteLine</font>(b); 
+        <font color=green>// Vaughn</font>
+        <br>
+        <br>
+        <font color=blue>void </font> <font color=#8B8000>Split</font>(<font color=blue>string</font> name, 
+        <font color=blue>out string</font> firstNames, 
+        <font color=blue>out string</font> lastName)
+        <br>
+        {{ squareBraketOpen }}
+        <br>
+        &nbsp;&nbsp;<font color=blue>int</font> i = name.<font color=#8B8000>LastIndexOf</font>(' ');
+        <br>
+        &nbsp;&nbsp;firstNames = name.<font color=#8B8000>Substring</font>(0, i);
+        <font color=green>// RETURNS</font>
+        <br>
+        &nbsp;&nbsp;lastName = name.<font color=#8B8000>Substring</font>(i + 1);
+        <font color=green>// RETURNS</font>
+        <br>
+        }
+    </p>
+    <p class="sub-intro-chapter-2">
+        WHEN CALLING METHODS WITH MULTIPLE <font color=blue>out</font> PARAMETERS, 
+        SOMETIMES YOU'RE NOT INTERESTED IN RECEIVING VALUES FROM 
+        ALL THE PARAMETERS. THAT'S WHEN WE USE DISCARD "_":
+        <br>
+        <br>
+        <font color=#8B8000>Split</font>("Stevie Ray Vaughn", 
+        <font color=blue>out string</font> a, 
+        <font color=blue>out </font>_);
+        <font color=green>// Discard 2nd param</font>
+        <br>
+        <font color=green>Console</font>.<font color=blue>WriteLine</font> (a);
+    </p>
+</div>

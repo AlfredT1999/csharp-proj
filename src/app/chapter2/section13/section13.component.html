@@ -1,1 +1,73 @@
-<p>section13 works!</p>
+<div>
+    <button mat-button routerLink="/section12">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section14">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        DEFAULT VALUES 
+    </h1>
+    <p class="sub-intro-chapter-2">
+        ALL TYPE INSTANCES HAVE A <font color=blue>default</font> VALUE. 
+        THE <font color=blue>default</font> VALUE FOR THE PREDEFINED TYPES IS 
+        THE RESULT OF A BITWISE ZEROING OF MEMORY:
+        <br>
+        <br>
+        1. REFERENCE TYPES (AND NULLABLE VALUE TYPES) <font color=green>-></font>
+        null
+        <br>
+        2. NUMERIC AND ENUM TYPES <font color=green>-></font>
+        0
+        <br>
+        3. char type <font color=green>-></font> 
+        '\0'
+        <br>
+        4. bool type <font color=green>-></font>  false
+        <br>
+        <br>
+        - TO GET THE <font color=blue>default</font> VALUE FOR ANY TYPE USE = 
+        <font color=blue>default</font> KEYWORD:
+        <br>
+        <br>
+        <font color=blue>Console</font>.<font color=green>WriteLine</font>
+        (<font color=blue>default</font>(<font color=blue>decimal</font>)); 
+        <font color=green>// 0</font>
+        <br>
+        <br>
+        - YOU CAN OPTIONALLY OMIT THE TYPE WHEN IT CAN BE INFERRED:
+        <br>
+        <br>
+        <font color=blue>decimal</font> d = <font color=blue>default</font>;
+    </p>
+
+    <h1 class="intro-chapter-2">
+        PARAMETERS
+    </h1>
+    <p class="sub-intro-chapter-2">
+        A METHOD MAY HAVE A SEQUENCE OF PARAMETERS. 
+        YOU CAN CONTROL HOW PARAMETERS ARE PASSED WITH THE 
+        <font color=blue>ref</font>, 
+        <font color=blue>in</font>, AND 
+        <font color=blue>out</font> modifiers:
+        <br>
+        <br>
+        1. MODIFIER-(<font color=blue>NONE</font>) -> 
+        PASSED BY-(<font color=green>VALUE</font>) -> GOING IN
+        <br>
+        2. MODIFIER-(<font color=blue>ref</font>) -> 
+        PASSED BY-(<font color=green>REFERENCE</font>) -> GOING IN
+        <br>
+        3. MODIFIER-(<font color=blue>in</font>) -> 
+        PASSED BY-(<font color=green>READ-ONLY</font>) -> GOING IN
+        <br>
+        4. MODIFIER-(<font color=blue>out</font>) -> 
+        PASSED BY-(<font color=green>REFERENCE</font>) -> GOING OUT
+    </p>
+</div>

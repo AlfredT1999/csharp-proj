@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section14.component.scss']
 })
 export class Section14Component implements OnInit {
+  squareBraketOpen = '{';
+  squareBraketClose = '}';
 
   constructor() { }
 
