@@ -1,0 +1,82 @@
+<div>
+    <button mat-button routerLink="/section18">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section20">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        REF LOCALS
+    </h1>
+    <p class="sub-intro-chapter-2">
+        A SOMEWHAT ESOTERIC FEATURE OF C# IS THAT YOU CAN DEFINE A LOCAL VARIABLE
+        THAT REFERENCES AN ELEMENT IN AN ARRAY OR FIELD IN AN OBJECT.
+        <br>
+        <br>
+        <font color=blue>int</font>[] numbers = 
+        {{ squareBraketOpen }} 0, 1, 2, 3, 4 };
+        <br>
+        <font color=blue>ref int</font> numRef = 
+        <font color=blue>ref </font>numbers[2];
+        <br>
+        <br>
+        <font color=green>// numRef IS A REFERENCE TO numbers[2]. WHEN WE MODIFY numRef, WE 
+        MODIFY THE ARRAY ELEMENT:</font>
+        <br>
+        <br>
+        numRef *= 10;
+        <br>
+        <font color=blue>Console</font>.<font color=green>WriteLine</font>(numRef);
+        <font color=green>// 20</font>
+        <br>
+        <font color=blue>Console</font>.<font color=green>WriteLine</font>(numRef[2]);
+        <font color=green>// 20</font>
+    </p>
+
+    <h2 class="intro-chapter-2">
+        REF RETURNS
+    </h2>
+    <p class="sub-intro-chapter-2">
+        YOU CAN RETURN A REF LOCAL FROM A METHOD. THIS IS CALLED A REF RETURN.
+        <br>
+        <br>
+        <font color=blue>using</font> System;
+        <br>
+        <br>
+        <font color=blue>public class</font> Program
+        <br>
+        {{ squareBraketOpen }}
+        <br>
+        &nbsp;&nbsp;<font color=blue>static string</font> x = "Old value";
+        <br>   
+        &nbsp;&nbsp;<font color=blue>static ref string</font> GetX() => <font color=blue>ref </font>x;<font color=green>// This method returns a ref.</font>
+        <br>
+        <br>
+        &nbsp;&nbsp;<font color=blue>public static void</font> Main()
+        <br>
+        &nbsp;&nbsp;{{ squareBraketOpen }}
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>ref string</font> xRef = 
+        <font color=blue>ref </font><font color=#8B8000>GetX</font>();
+        <font color=green>// Assing result to a ref local.</font>
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;xRef = "New value";
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>Console</font>.<font color=green>WriteLine</font>(x);
+        <font color=green>// New value</font>
+        <br>
+        &nbsp;&nbsp;}
+        <br>
+        }
+    </p>
+    <br>
+    <br>
+    <br>
+</div>

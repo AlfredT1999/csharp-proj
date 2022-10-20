@@ -1,0 +1,98 @@
+<div>
+    <button mat-button routerLink="/section17">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section19">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        OPTIONAL PARAMETERS
+    </h1>
+    <p class="sub-intro-chapter-2">
+        METHODS, CONSTRUCTORS, AND INDEXERS CAN DECLARE OPTIONAL PARAMETERS
+        SPECIFIYING A DEFAULT VALUE IN ITS DECLARATION.
+        <br>
+        <br>
+        <font color=blue>void</font> Foo(<font color=blue>int</font>
+        x = 23) {{ squareBraketOpen }} <font color=blue>Console</font>.<font color=green>WriteLine</font>(x); {{ squareBraketClose }}
+        <br>
+        <br>
+        * OPTIONAL PARAMETERS CANNOT BE MARKET WITH <font color=blue>ref</font> OR 
+        <font color=blue>out</font>.
+        <br>
+        <br>
+        IN THE FOLLOWING EXAMPLE, THE EXPLICIT VALUE OF 1 IS PASSED TO x, AND THE DEFAULT 
+        VALUE OF 0 IS PASSED TO y:
+        <br>
+        <br>
+        <font color=#8B8000>Foo</font>(1);<font color=green>// 1, 0</font>
+        <br>
+        <font color=blue>void </font> Foo(<font color=blue>int </font>x = 0, <font color=blue>int </font>y = 0)
+        {{ squareBraketOpen }} <font color=blue>Console</font>.<font color=green>WriteLine</font>(x + ", " + y); {{ squareBraketClose }}
+        <br>
+        <br>
+        YOU CAN DO THE CONVERSE (PASS A DEFAULT VALUE TO x AND EXPLICIT VALUE TO y) BY 
+        COMBINING OPTIONAL PARAMETERS WITH NAMED ARGUMENTS.
+    </p>
+
+    <h1 class="intro-chapter-2">
+        NAMED ARGUMENTS
+    </h1>
+    <p class="sub-intro-chapter-2">
+        RATHER THAN IDENTIFYING AN ARGUMENT BY POSITION, YOU CAN IDENTIFY AN ARGUMENT
+        BY NAME:
+        <br>
+        <br>
+        <font color=#8B8000>Foo</font>(x:1, y:2);<font color=green>// 1, 2</font>
+        <br>
+        <font color=blue>void </font>Foo(<font color=blue>int </font>x,
+        <font color=blue>int </font>y) {{ squareBraketOpen }}
+        <font color=blue>Console</font>.<font color=green>WriteLine</font>(x + ", " + y); {{ squareBraketClose }}
+        <br>
+        <br>
+        NAMED ARGUMENTS CAN OCCUR IN ANY ORDER. THE FOLLOWING CALLS TO 
+        <font color=#8B8000>Foo</font>() ARE SEMANTICALLY IDENTICAL:
+        <br>
+        <br>
+        <font color=#8B8000>Foo</font>(x:1, y:2);
+        <br>
+        <font color=#8B8000>Foo</font>(y:2, x:1);
+        <br>
+        <br>
+        YOU CAN MIX NAMED AND POSITIONAL ARGUMENTS:
+        <br>
+        <br>
+        <font color=#8B8000>Foo</font>(1, y:2);
+        <br>
+        <br>
+        * THERE IS A RESTRICTION: POSITIONAL ARGUMENTS MUST COME BEFORE NAMED ARGUMENTS
+        UNLESS THEY ARE USED IN THE CORRECT POSITION.
+        <br>
+        <br>
+        NAMED ARGUMENTS ARE PARTICULARLY USEFUL IN CONJUNCTION WITH OPTIONAL PARAMETERS.
+        CONSIDER THE FOLLOWING EXAMPLE:
+        <br>
+        <br>
+        <font color=blue>void </font>Bar(
+        <font color=blue>int </font>a = 0, 
+        <font color=blue>int </font>b = 0,
+        <font color=blue>int </font>c = 0,
+        <font color=blue>int </font>d = 0
+        ) {{ squareBraketOpen }} {{ squareBraketClose }}
+        <br>
+        <font color=green>
+        // YOU CAN CALL THIS SUPPLYING ONLY A VALUE FOR d, AS FOLLOWS:
+        </font>
+        <br>
+        <font color=#8B8000>Bar</font>(d:3);
+    </p>
+    <br>
+    <br>
+    <br>
+</div>
