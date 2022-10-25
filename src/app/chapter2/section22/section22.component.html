@@ -1,0 +1,77 @@
+<div>
+    <button mat-button routerLink="/section21">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section23">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        NULL OPERATORS
+    </h1>
+    <h2 class="intro-chapter-2">
+        # NULL-COALESCING OPERATOR
+    </h2>
+    <p class="sub-intro-chapter-2">
+        THE ?? OPERATOR IS THE NULL-COALESCING OPERATOR. IT SAYS, 
+        "IF THE OPERAND TO THE LEFT IS NON-NULL, GIVE IT TO ME; OTHERWISE, 
+        GIVE ME ANOTHER VALUE":
+        <br>
+        <br>
+        <font color=blue>string</font> s1 = <font color=blue>null</font>;
+        <br>
+        <font color=blue>string</font> s2 = s1 ?? "nothing";
+        <font color=green>// s2 evaluates to nothing.</font>
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # NULL-COALESCING ASSIGNMENT OPERATOR
+    </h2>
+    <p class="sub-intro-chapter-2">
+        THE ??= OPERATOR IS THE NULL-COALESCING ASSIGNMENT OPERATOR. IT SAYS, 
+        "IF THE OPERAND TO THE LEFT IS NULL, ASSIGN THE RIGHT OPERAND TO THE LEFT 
+        OPERAND".
+        <br>
+        <br>
+	    myVariable ??= someDefault;
+        <br>
+        <br>
+        <font color=green>THIS IS EQUIVALENT TO:</font>
+        <br>
+        <br>
+	    if(myVariable == null) myVariable = someDefault;
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # NULL-CONDITIONAL OPERATOR
+    </h2>
+    <p class="sub-intro-chapter-2">
+        THE ?. OPERATOR IS THE NULL-CONDITIONAL OPERATOR, ALLOWS YOU TO CALL METHODS 
+        AND ACCESS MEMBERS JUST LIKE THE STANDARD DOT OPERATOR EXCEPT THAT IF THE 
+        OPERAND ON THE LEFT IS <font color=blue>null</font>, THE EXPRESSION EVALUATES 
+        TO <font color=blue>null</font> INSTEAD OF 
+        THROWING A <font color=green>NullReferenceException</font>:
+        <br>
+        <br>
+        System.Text.StringBuilder sb = <font color=blue>null</font>;
+        <br>
+        <font color=blue>string</font> s = sb?.<font color=#8B8000>ToString</font>();
+        <font color=green>// No error; s instead evaluates to null</font>
+        <br>
+        <br>
+        IS EQUIVALENT TO THE FOLLOWING:
+        <br>
+        <br>
+        <font color=blue>string</font> s = (sb == <font color=blue>null</font>
+        ? <font color=blue>null</font> : sb.<font color=#8B8000>ToString</font>());
+    </p>
+
+    <br>
+    <br>
+    <br>
+</div>

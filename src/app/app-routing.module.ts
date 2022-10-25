@@ -13,6 +13,10 @@ import { Section17Component } from './chapter2/section17/section17.component';
 import { Section18Component } from './chapter2/section18/section18.component';
 import { Section19Component } from './chapter2/section19/section19.component';
 import { Section2Component } from './chapter2/section2/section2.component';
+import { Section20Component } from './chapter2/section20/section20.component';
+import { Section21Component } from './chapter2/section21/section21.component';
+import { Section22Component } from './chapter2/section22/section22.component';
+import { Section23Component } from './chapter2/section23/section23.component';
 import { Section3Component } from './chapter2/section3/section3.component';
 import { Section4Component } from './chapter2/section4/section4.component';
 import { Section5Component } from './chapter2/section5/section5.component';
@@ -101,6 +105,22 @@ const routes: Routes = [
   {
     path: 'section19',
     component: Section19Component
+  },
+  {
+    path: 'section20',
+    component: Section20Component
+  },
+  {
+    path: 'section21',
+    component: Section21Component
+  },
+  {
+    path: 'section22',
+    component: Section22Component
+  },
+  {
+    path: 'section23',
+    component: Section23Component
   }
 ];
 

@@ -1,0 +1,167 @@
+<div>
+    <button mat-button routerLink="/section22">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section24">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        STATEMENTS
+    </h1>
+    <p class="sub-intro-chapter-2">
+        A STATEMENT BLOCK IS A SERIES OF STATEMENTS APPEARING BETWEEN BACES {{squareBraketOpen}}{{squareBraketClose}}
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # LOCAL VARIABLES
+    </h2>
+    <p class="sub-intro-chapter-2">
+        THE SCOPE OF A LOCAL VARIABLE OR LOCAL CONSTANT EXTENDS THROUGHOUT THE CURRENT 
+        BLOCK.
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # SELECTION STATEMENTS
+    </h2>
+    <p class="sub-intro-chapter-2">
+        C# HAS THE FOLLOWING MECHANISM TO CONDITIONALLY CONTROL THE FLOW OF PROGRAM 
+        EXECUTION:
+        <br>
+        <br>
+        1. SELECTION STATEMENTS (IF, SWITCH)
+        <br>
+        2. CONDITIONAL OPERATOR (?:)
+        <br>
+        3. LOOP STATEMENTS (WHILE, DO-WHILE, FOR, FOREACH)
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # THE IF/ELSE STATEMENT
+    </h2>
+    <p class="sub-intro-chapter-2">
+        AN IF STATEMENT EXECUTES A STATEMENT IF A BOOL EXPRESSION IS TRUE:
+        <br>
+        <br>
+        if(5 < 2 * 3) <font color=blue>Console</font>.<font color=green>WriteLine</font>("true");
+        <br>
+        <br>
+        AN IF STATEMENT CAN OPTIONALLY FEATURE AN else CLAUSE:
+        <br>
+        <br>
+        else <font color=blue>Console</font>.<font color=green>WriteLine</font>("false");
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # THE SWITCH STATEMENT 
+    </h2>
+    <p class="sub-intro-chapter-2">
+        SWITCH STATEMENTS LET YOU BRANCH PROGRAM EXECUTION BASED ON A SELECTION OF POSSIBLE VALUES THAT A VARIABLE MIGHT HAVE:
+        <br>
+        <br>
+        <font color=blue>void</font> ShowCard(<font color=blue>int</font> cardNumber)
+        <br>
+        {{squareBraketOpen}}
+            <br>
+            &nbsp;&nbsp;switch(cardNumber)
+            <br>
+            &nbsp;&nbsp;{{squareBraketOpen}}
+                <br>
+                &nbsp;&nbsp;&nbsp;<font color=blue>case</font> 1:
+                    <br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>Console</font>.<font color=green>WriteLine</font>("Hi");
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<font color=red>break</font>;<font color=green>// Jumps to the end of the switch statement</font> 
+                <br>
+                &nbsp;&nbsp;&nbsp;<font color=blue>case</font> 2: 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>Console</font>.<font color=green>WriteLine</font>("there");
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<font color=red>break</font>;
+                <br>
+                &nbsp;&nbsp;&nbsp;<font color=blue>case</font> 3: 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>Console</font>.<font color=green>WriteLine</font>("!");
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<font color=red>break</font>;
+                <br>   
+                &nbsp;&nbsp;&nbsp;<font color=blue>case</font> -1: 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>goto case</font> 1; <font color=green>// Jumps to another case clause. Another options is: goto default which jumps to the default clause.</font>
+                <br>
+                &nbsp;&nbsp;&nbsp;<font color=blue>default</font>:
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>Console</font>.<font color=green>WriteLine</font>("No greetings!");
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<font color=red>break</font>;
+                <br>
+                &nbsp;&nbsp;}
+            <br>
+        }
+    </p>
+
+    <p class="sub-intro-chapter-2">
+        WHEN MORE THAN ONE VALUE SHOULD EXECUTE THE SAME CODE, YOU CAN LIST THE COMMON CASES SEQUENTIALLY:
+        <br>
+        <br>
+        
+    &nbsp;&nbsp;switch(cardNumber)
+    <br>
+    &nbsp;&nbsp;{{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>case</font> 1:
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>case</font> 2: 
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>case</font> 3: 
+        <br>   
+        &nbsp;&nbsp;&nbsp;<font color=blue>case</font> 4: 
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>Console</font>.<font color=green>WriteLine</font>("Hi there!");
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color=red>break</font>;
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>default</font>:
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>Console</font>.<font color=green>WriteLine</font>("No greetings!");
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<font color=red>break</font>;
+        <br>
+        &nbsp;&nbsp;}
+        <br>
+        <br>
+        THIS FEATURE OF A SWITCH STATEMENT PRODUCES CLEANER CODE THAN MULTIPLE if-else STATEMENTS.
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # SWITCH EXPRESSIONS
+    </h2>
+    <p class="sub-intro-chapter-2">
+        SWITCH IN THE CONTEXT OF AN EXPRESSION. ASSUMING THAT cardNumber IS OF TYPE <font color=blue>int</font>, THE FOLLOWING ILLUSTRATES ITS USE:
+        <br>
+        <br>
+        &nbsp;&nbsp;<font color=blue>string</font> cardName = cardNumber switch 
+        <br>
+        &nbsp;&nbsp;{{squareBraketOpen}}
+            <br>
+            &nbsp;&nbsp;&nbsp;13 => "King",
+            <br>
+            &nbsp;&nbsp;&nbsp;12 => "Queen",
+            <br>
+            &nbsp;&nbsp;&nbsp;11 => "Jack",
+            <br>   
+            &nbsp;&nbsp;&nbsp;_ => "Pip Card" <font color=green>//  equivalent to 'default'</font>
+            <br>
+            &nbsp;&nbsp;}
+        <br>
+    </p>
+
+    <br>
+    <br>
+    <br>
+</div>

@@ -1,0 +1,54 @@
+<div>
+    <button mat-button routerLink="/section19">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section21">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        IMPLICITLY TYPED LOCAL VARIABLES
+    </h1>
+    <p class="sub-intro-chapter-2">
+        IF THE COMPILER IS ABLE TO INFER THE TYPE FROM THE INITIALIZATION EXPRESSION, 
+        YOU CAN USE THE KEYWORD <font color=blue>var</font> IN PLACE OF THE TYPE DECLARATION:
+        <br>
+        <br>
+        <font color=blue>var</font> x = "hello";
+        <br>
+        <font color=blue>var</font> y = (<font color=blue>float</font>)Math.PI;
+        <br>
+        <br>
+        IMPLICITLY TYPED VARIABLES ARE STATICALLY TYPED. FOR EXAMPLE, THE FOLLOWING 
+        GENERATES A COMPILE-TIME ERROR:
+        <br>
+        <br>
+        <font color=blue>var</font> x = 5;
+        <br>
+        x = "hello"; <font color=green>// COMPILE-TIME ERROR; x IS OF TYPE int</font>
+    </p>
+
+    <h1 class="intro-chapter-2">
+        TARGET-TYPED <font color=blue>new</font> EXPRESSIONS
+    </h1>
+    <p class="sub-intro-chapter-2">
+        ANOTHER WAY TO REDUCE LEXICAL REPETITION IS WITH TARGET-TYPED <font color=blue>new</font> 
+        EXPRESSIONS:
+        <br>
+        <br>
+        System.Text.StringBuilder sb1 = <font color=blue>new</font>("Test");
+        <br>
+        <font color=green># THIS IS EQUIVALENT TO:</font>
+        <br>
+        System.Text.StringBuilder sb1 = <font color=blue>new</font> System.Text.StringBuilder("Test");
+    </p>
+
+    <br>
+    <br>
+    <br>
+</div>
