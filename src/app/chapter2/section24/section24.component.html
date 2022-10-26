@@ -1,0 +1,124 @@
+<div>
+    <button mat-button routerLink="/section23">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section25">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h2 class="intro-chapter-2">
+        # WHILE LOOP
+    </h2>
+    <p class="sub-intro-chapter-2">
+        THE EXPRESSION IS TESTED BEFORE THE BODY OF THE LOOP IS EXECUTED.
+        <br>
+        <br>
+        <font color=blue>int</font> i = 0;
+        <br>
+        <br>
+        <font color=blue>while</font>(i < 10)
+        <br>
+        {{squareBraketOpen}}
+            <br>
+            &nbsp;&nbsp;&nbsp;<font color=blue>Console</font>.<font color=green>Write</font>("Hi"); <font color=green>// prints Hi 10 times</font>
+            <br>
+            &nbsp;&nbsp;&nbsp;i++;
+            <br>
+        }
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # DO-WHILE LOOP
+    </h2>
+    <p class="sub-intro-chapter-2">
+        TEST THE EXPRESSION AFTER THE STATEMENT BLOCK HAS EXECUTED (ENSURING THAT THE BLOCK IS ALWAYS EXECUTED AT LEAST ONCE).
+        <br>
+        <br>
+        <font color=blue>int</font> i = 10;
+        <br>
+        <br>
+        <font color=blue>do</font>
+        <br>
+        {{squareBraketOpen}}
+            <br>
+            &nbsp;&nbsp;&nbsp;<font color=blue>Console</font>.<font color=green>Write</font>("Hi"); <font color=green>// executes at least once.</font>
+            <br>
+            &nbsp;&nbsp;&nbsp;i++;
+            <br>
+        }<font color=blue> while</font>(i < 10);
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # FOR LOOPS 
+    </h2>
+    <p class="sub-intro-chapter-2">
+        ARE LIKE while LOOPS WITH SPECIAL CLAUSES FOR INITIALIZATION AND ITERATION OF A LOOP VARIABLE.
+        <br>
+        <br>
+        <font color=blue>for</font>(<font color=blue>int</font> i = 0; i < 10; i++) 
+        {{squareBraketOpen}}
+        <font color=green>Executes something...</font>
+        }
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # FOREACH LOOPS
+    </h2>
+    <p class="sub-intro-chapter-2">
+        ITERATES OVER EACH ELEMENT IN AN ENUMERABLE OBJECT. MOST OF .NET TYPES THAT REPRESENT A SET OR LIST OF ELEMENTS ARE ENUMERABLE.
+        <br>
+        <br>
+        <font color=blue>foreach</font>(<font color=blue>char</font> c <font color=blue>in</font> "beer") 
+        {{squareBraketOpen}}
+        <font color=blue>Console</font>.<font color=green>WriteLine</font>(c);<font color=green>// prints 'b' 'e' 'e' 'r'</font>
+        }
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # LABELS
+    </h2>
+    <p class="sub-intro-chapter-2">
+        A LABEL IS A PLACEHOLDER IN A CODE BLOCK THAT PRECEDES A STATEMENT, DENOTED WITH A COLON SUFFIX.
+        <br>
+        <br>
+        <font color=blue>int</font> i = 1;
+        <br>
+        <br>
+        startloop:
+        <br>
+        if(i <= 5)
+        <br>
+        {{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>Console</font>.<font color=green>Write</font>(i);
+        <br>
+        &nbsp;&nbsp;&nbsp;i++;
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>goto</font> startloop;
+        <br>
+        {{squareBraketClose}}
+        <br>
+        <font color=green>// Output 1 2 3 4 5</font>
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # THE THROW STATEMENT 
+    </h2>
+    <p class="sub-intro-chapter-2">
+        THE <font color=blue>throw</font> STATEMENT THROWS AN EXCEPTION TO INDICATE AN ERROR HAS OCCURRED:
+        <br>
+        <br>
+        if(w == <font color=blue>null</font>) 
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>throw new </font><font color=green>ArgumentNullException</font>(...);
+    </p>
+
+    <br>
+    <br>
+    <br>
+</div>

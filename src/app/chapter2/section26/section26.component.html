@@ -1,0 +1,84 @@
+<div>
+    <button mat-button routerLink="/section25">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section27">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h2 class="intro-chapter-2">
+        # USING DIRECTIVE
+    </h2>
+    <p class="sub-intro-chapter-2">
+        THE <font color=blue>using</font> DIRECTIVE IMPORTS A <font color=blue>namespace</font>, 
+        ALLOWING YOU TO REFER TO TYPES WITHOUT THEIR FULLY QUALIFIED NAMES:
+        <br>
+        <br>
+        <font color=blue>using</font> Outer.Middle.Inner;
+        <br>
+        <br>
+        <font color=green>Class1</font> c = <font color=blue>new</font>(); 
+        <font color=green>// DON'T NEED FULLY QUALIFIED NAME.</font>
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # THE GLOBAL USING DIRECTIVE
+    </h2>
+    <p class="sub-intro-chapter-2">
+        IF YOU PREFIX A USING DIRECTIVE WITH THE GLOBAL KEYWORD, THE DIRECTIVE WILL 
+        APPLY TO ALL FILES IN THE PROJECT OR COMPILATION UNIT:
+        <br>
+        <br>
+        <font color=blue>global using</font> System;
+        <br>
+        <font color=blue>global using</font> System.Collection.Generic;
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # IMPLICIT GLOBAL USINGS 
+    </h2>
+    <p class="sub-intro-chapter-2">
+        FROM .NET 6, PROJECT FILES ALLOW FOR IMPLICIT GLOBAL USING DIRECTIVES (IF ARE SET TO TRUE):
+        <br>
+        <br>
+        System
+        <br>
+        System.Collections.Generic
+        <br>
+        System.IO
+        <br>
+        System.Linq
+        <br>
+        System.Net.Http
+        <br>
+        System.Threading
+        <br>
+        System.Threading.Tasks
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # USING STATIC
+    </h2>
+    <p class="sub-intro-chapter-2">
+        THE USING STATIC DIRECTIVE IMPORTS A TYPE RATHER THAN A <font color=blue>namespace</font>. 
+        ALL STATIC MEMBERS OF THE IMPORTED TYPE CAN THEN BE USED WITHOUT QUALIFICATION. 
+        FOR EXAMPLE:
+        <br>
+        <br>
+        <font color=blue>using static</font> System.Console;
+        <br>
+        <font color=green>WriteLine</font>("Hello!");
+        <br>
+        <br>
+        THE USING STATIC DIRECTIVE IMPORTS ALL ACCESSIBLE STATIC MEMBERS OF THE TYPE, INCLUSING FIELDS, PROPERTIES AND NESTED TYPES.
+    </p>
+
+    <br>
+    <br>
+    <br>
+</div>

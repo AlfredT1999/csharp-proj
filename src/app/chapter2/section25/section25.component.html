@@ -1,0 +1,71 @@
+<div>
+    <button mat-button routerLink="/section24">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section26">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h2 class="intro-chapter-2">
+        # NAMESPACES
+    </h2>
+    <p class="sub-intro-chapter-2">
+        - A <font color=blue>namespace</font> IS A DOMAIN FOR TYPE NAMES. TYPES ARE TYPICALLY ORGANIZED INTO HIERARCHICAL <font color=blue>namespaces</font>, MAKING THEM EASIER TO FIND AND PREVENTING CONFLICTS.
+        <br>
+        - <font color=blue>namespaces</font> ARE INDEPENDENT OF ASSEMBLIES, WHICH ARE .dll FILES THAT SERVE AS UNITS OF DEPLOYMENTS.
+        <br>
+        - <font color=blue>namespaces</font> ALSO HAVE NO IMPACT ON MEMBER VISIBILITY -PUBLIC, INTERNAL, PRIVATE AND SO ON.
+        <br>
+        - THE <font color=blue>namespace</font> KEYWORD DEFINES A <font color=blue>namespace</font> FOR TYPES WITHIN A THAT BLOCK; FOR EXAMPLE:
+        <br>
+        <br>
+        <font color=blue>namespace</font> Outer.Middle.Inner
+        <br>
+        {{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;<font color=blue>class</font> class Class1 {{squareBraketOpen}}}
+        <br>
+        &nbsp;&nbsp;<font color=blue>class</font> class Class2 {{squareBraketOpen}}}
+        <br>
+        {{squareBraketClose}}
+        <br>
+        <br>
+        THE DOTS IN THE <font color=blue>namespace</font> INDICATE A HIERARCHY OF NESTED <font color=blue>namespaces</font>. THIS IS SEMANTICALLY IDENTICAL TO THE PRECIDING CODE:
+        <br>
+        <br>
+        <font color=blue>namespace</font> Outer
+        <br>
+        {{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;<font color=blue>namespace</font> Middle 
+        <br>
+        &nbsp;&nbsp;{{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>namespace</font> Inner
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;{{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>class</font> Class1 {{squareBraketOpen}}}
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>class</font> Class2 {{squareBraketOpen}}}
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;{{squareBraketClose}}
+        <br>
+        &nbsp;&nbsp;{{squareBraketClose}}
+        <br>
+        {{squareBraketClose}}
+        <br>
+        <br>
+        YOU CAN REFER TO A TYPE WITH ITS FULLY QUALIFIED NAME, WHICH INCLUDES ALL <font color=blue>namespaces</font> FROM THE OUTERMOST TO THE INNERMOST.
+        TYPES NOT DEFINED IN ANY <font color=blue>namespace</font> ARE SAID TO RESIDE IN THE GLOBAL <font color=blue>namespace</font>. 
+    </p>
+
+    <br>
+    <br>
+    <br>
+</div>

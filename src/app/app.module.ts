@@ -30,11 +30,13 @@ import { Section16Component } from './chapter2/section16/section16.component';
 import { Section17Component } from './chapter2/section17/section17.component';
 import { Section18Component } from './chapter2/section18/section18.component';
 import { Section19Component } from './chapter2/section19/section19.component';
-import { AceComponent } from './ace/ace.component';
 import { Section20Component } from './chapter2/section20/section20.component';
 import { Section21Component } from './chapter2/section21/section21.component';
 import { Section22Component } from './chapter2/section22/section22.component';
 import { Section23Component } from './chapter2/section23/section23.component';
+import { Section24Component } from './chapter2/section24/section24.component';
+import { Section25Component } from './chapter2/section25/section25.component';
+import { Section26Component } from './chapter2/section26/section26.component';
 
 @NgModule({
   declarations: [
@@ -60,11 +62,13 @@ import { Section23Component } from './chapter2/section23/section23.component';
     Section17Component,
     Section18Component,
     Section19Component,
-    AceComponent,
     Section20Component,
     Section21Component,
     Section22Component,
-    Section23Component
+    Section23Component,
+    Section24Component,
+    Section25Component,
+    Section26Component
   ],
   imports: [
     BrowserModule,
