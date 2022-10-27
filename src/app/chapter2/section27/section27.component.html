@@ -1,0 +1,139 @@
+<div>
+    <button mat-button routerLink="/section26">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section28">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        RULES WITHIN A NAMESPACE
+    </h1>
+
+    <h2 class="intro-chapter-2">
+        # NAME SCOPING 
+    </h2>
+    <p class="sub-intro-chapter-2">
+        NAMES DECLARED IN OUTER NAMESPACES CAN BE USED UNQUALIFIED WITHIN INNER 
+        NAMESPACES. IN THIS EXAMPLE, Class1 DOES NOT NEED QUALIFICATION WITHIN 
+        Inner:
+        <br>
+        <br>
+        <font color=blue>namespace</font> Outer
+        <br>
+        {{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>class</font> Class1 {{squareBraketOpen}}}
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>namespace</font> Inner
+        <br>
+        &nbsp;&nbsp;&nbsp;{{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>class</font> Class2 : Class1 {{squareBraketOpen}}}
+        <br>
+        &nbsp;&nbsp;&nbsp;}
+        <br>
+        }
+        <br>
+        <br>
+        IF YOU WANT TO REFER TO A TYPE IN A DIFFERENT BRANCH OF YOUR NAMESPACE HIERARCHY, 
+        YOU CAN USE A PARTIALLY QUALIFIED NAME:
+        <br>
+        <br>
+        <font color=blue>namespace</font> MyTradingCompany
+        <br>
+        {{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>namespace</font> Common
+        <br>
+        &nbsp;&nbsp;&nbsp;{{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>class</font> ReportBase {{squareBraketOpen}}}
+        <br>
+        &nbsp;&nbsp;&nbsp;}
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>namespace</font> ManagementReporting
+        <br>
+        &nbsp;&nbsp;&nbsp;{{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>class</font> SalesReport : Common.ReportBase {{squareBraketOpen}}}
+        <br>
+        &nbsp;&nbsp;&nbsp;}
+        <br>
+        }
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # NAME HIDING
+    </h2>
+    <p class="sub-intro-chapter-2">
+        IF THE SAME TYPE APPEARS IN BOTH AN INNER AND AN OUTER NAMESPACE, THE INNER NAME WINS. TO REFER TO THE TYPE IN THE OUTER NAMESPACE, 
+        YOU MUST QUALIFY ITS NAME:
+        <br>
+        <br>
+        <font color=blue>namespace</font> Outer
+        <br>
+        {{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>class</font> Foo {{squareBraketOpen}}}
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>namespace</font> Inner
+        <br>
+        &nbsp;&nbsp;&nbsp;{{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>class</font> Foo {{squareBraketOpen}}}
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>class</font> Test
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Foo f1;
+        <font color=green>// = Outer.Inner.Foo</font> 
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outer.Foo f2; 
+        <font color=green>// = Outer.Foo</font> 
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+        <br>
+        &nbsp;&nbsp;&nbsp;}
+        <br>
+        }
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # REPEATED NAMESPACES
+    </h2>
+    <p class="sub-intro-chapter-2">
+        YOU CAN REPEAT A NAMESPACE DECLARATION, AS LONG AS THE TYPE NAMES WITHIN THE NAMESPACES DON'T CONFLICT:
+        <br>
+        <br>
+        <font color=blue>namespace</font> Outer.Middle.Inner
+        <br>
+        {{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>class</font> Class1 {{squareBraketOpen}}}
+        <br>
+        }
+        <br>
+        <br>
+        <font color=blue>namespace</font> Outer.Middle.Inner
+        <br>
+        {{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>class</font> Class2 {{squareBraketOpen}}}
+        <br>
+        }
+    </p>
+
+    <br>
+    <br>
+    <br>
+</div>

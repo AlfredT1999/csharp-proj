@@ -1,0 +1,78 @@
+<div>
+    <button mat-button routerLink="/section27">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section29">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h2 class="intro-chapter-2">
+        # NESTED USING DIRECTIVES
+    </h2>
+    <p class="sub-intro-chapter-2">
+        YOU CAN NEST A USING DIRECTIVE WITHIN A NAMESPACE. 
+        THIS ALLOWS YOU TO SCOPE THE USING DIRECTIVE WITHIN A NAMESPACE DECLARATION.
+        <br>
+        <br>
+        <font color=blue>namespace</font> N1
+        <br>
+        {{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>class</font> Class1 {{squareBraketOpen}}}
+        <br>
+        }
+        <br>
+        <br>
+        <font color=blue>namespace</font> N2
+        <br>
+        {{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>using</font> N1;
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>class</font> Class2 {{squareBraketOpen}}} : Class1 {{squareBraketOpen}}}
+
+        <br>
+        }
+        <br>
+        <br>
+        <font color=blue>namespace</font> N2
+        <br>
+        {{squareBraketOpen}}
+        <br>
+        &nbsp;&nbsp;&nbsp;<font color=blue>class</font> Class3 {{squareBraketOpen}}} : Class1 {{squareBraketOpen}}}
+        <font color=green>// Compile-time error</font>
+        <br>
+        }
+    </p>
+
+    <h2 class="intro-chapter-2">
+        # ALIASING TYPES AND NAMESPACES
+    </h2>
+    <p class="sub-intro-chapter-2">
+        IMPORTING A NAMESPACE CAN RESULT IN TYPE-NAME COLLISION. RATHER THAN IMPORTING 
+        THE ENTIRE NAMESPACE, YOU CAN IMPORT JUST THE SPECIFIC TYPES THAT YOU NEED, 
+        GIVING EACH TYPE AN ALIAS:
+        <br>
+        <br>
+        <font color=blue>using</font> PropertyInfo2 = System.Reflection.PropertyInfo;
+        <br>
+        <font color=blue>class</font> Program {{squareBraketOpen}} PropertyInfo2 p; }
+        <br>
+        <br>
+        AN ENTIRE NAMESPACE CAN BE ALIASED, AS FOLLOWS:
+        <br>
+        <br>
+        <font color=blue>using</font> R = System.Reflection;
+        <br>
+        <font color=blue>class</font> Program {{squareBraketOpen}} R.PropertyInfo2 p; }
+    </p>
+
+    <br>
+    <br>
+    <br>
+</div>
