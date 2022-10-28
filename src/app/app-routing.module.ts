@@ -29,6 +29,7 @@ import { Section6Component } from './chapter2/section6/section6.component';
 import { Section7Component } from './chapter2/section7/section7.component';
 import { Section8Component } from './chapter2/section8/section8.component';
 import { Section9Component } from './chapter2/section9/section9.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
@@ -146,6 +147,10 @@ const routes: Routes = [
   {
     path: 'section28',
     component: Section28Component
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent
   }
 ];
 

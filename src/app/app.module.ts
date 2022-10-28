@@ -39,6 +39,7 @@ import { Section25Component } from './chapter2/section25/section25.component';
 import { Section26Component } from './chapter2/section26/section26.component';
 import { Section27Component } from './chapter2/section27/section27.component';
 import { Section28Component } from './chapter2/section28/section28.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { Section28Component } from './chapter2/section28/section28.component';
     Section25Component,
     Section26Component,
     Section27Component,
-    Section28Component
+    Section28Component,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
