@@ -40,6 +40,11 @@ import { Section26Component } from './chapter2/section26/section26.component';
 import { Section27Component } from './chapter2/section27/section27.component';
 import { Section28Component } from './chapter2/section28/section28.component';
 import { ProfileComponent } from './profile/profile.component';
+import { Chapter3Component } from './chapter3/chapter3.component';
+import { Section29Component } from './chapter3/section29/section29.component';
+import { Section30Component } from './chapter3/section30/section30.component';
+import { Section31Component } from './chapter3/section31/section31.component';
+import { Section32Component } from './chapter3/section32/section32.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +79,12 @@ import { ProfileComponent } from './profile/profile.component';
     Section26Component,
     Section27Component,
     Section28Component,
-    ProfileComponent
+    ProfileComponent,
+    Chapter3Component,
+    Section29Component,
+    Section30Component,
+    Section31Component,
+    Section32Component
   ],
   imports: [
     BrowserModule,

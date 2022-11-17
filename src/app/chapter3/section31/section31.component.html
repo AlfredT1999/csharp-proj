@@ -1,0 +1,55 @@
+<div>
+    <button mat-button routerLink="/section30">
+        <span class="material-icons"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <button mat-button routerLink="/section32">
+        <span class="material-icons" style="transform: rotateY(180deg); margin-left: 20px;"> 
+            arrow_back_ios_new 
+        </span>
+    </button>
+
+    <h1 class="intro-chapter-2">
+        STATIC LOCAL METHODS
+    </h1>
+    <p class="sub-intro-chapter-2">
+        ADDING THE <font color=blue>static</font> MODIFIER TO A LOCAL METHOD
+        PREVENTS IT FROM SEEING THE LOCAL VARIABLES AND PARAMETERS OF THE ENCLOSING
+        METHOD. THIS HELPS TO REDUCE COUPLING AND PREVENTS THE LOCAL METHOD FROM 
+        ACCIDENTALLY REFERRING TO VARIABLES IN THE CONTAINING METHOD.
+    </p>
+
+    <h1 class="intro-chapter-2">
+        LOCAL METHODS AND TOP-LEVEL STATEMENTS
+    </h1>
+    <p class="sub-intro-chapter-2">
+        ANY METHODS THAT YOU DECLARE IN TOP-LEVEL STATEMENTS ARE TREATED AS 
+        LOCAL METHODS. THIS MEANS THAT (UNLESS MARKED AS <font color=blue>static</font>)
+        THEY CAN ACCESS THE VARIABLES IN THE TOP-LEVEL STATEMENTS.
+    </p>
+
+    <h1 class="intro-chapter-2">
+        OVERLOADING METHODS 
+    </h1>
+    <p class="sub-intro-chapter-2">
+        A TYPE CAN OVERLOAD METHODS (DEFINE MULTIPLE MEHTODS WITH THE SAME NAME)
+        AS LONG AS THE SIGNATURE ARE DIFFERENT. FOR EXAMPLE:
+        <br>
+        <br>
+        <font color=blue>void</font> Foo (<font color=blue>int</font> x) {{squareBraketOpen}}...}
+        <br>
+        <font color=blue>void</font> Foo (<font color=blue>double</font> x) {{squareBraketOpen}}...}
+        <br>
+        <font color=blue>void</font> Foo (<font color=blue>int</font> x, 
+        <font color=blue>float</font> y) {{squareBraketOpen}}...}
+        <br>
+        <font color=blue>void</font> Foo (<font color=blue>float</font> x, 
+        <font color=blue>int</font> y) {{squareBraketOpen}}...}
+    </p>
+
+    <br>
+    <br>
+    <br>
+</div>

@@ -30,6 +30,11 @@ import { Section7Component } from './chapter2/section7/section7.component';
 import { Section8Component } from './chapter2/section8/section8.component';
 import { Section9Component } from './chapter2/section9/section9.component';
 import { ProfileComponent } from './profile/profile.component';
+import { Chapter3Component } from './chapter3/chapter3.component';
+import { Section29Component } from './chapter3/section29/section29.component';
+import { Section30Component } from './chapter3/section30/section30.component';
+import { Section31Component } from './chapter3/section31/section31.component';
+import { Section32Component } from './chapter3/section32/section32.component';
 
 const routes: Routes = [
   {
@@ -151,6 +156,26 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent
+  },
+  {
+    path: 'chapter3',
+    component: Chapter3Component
+  },
+  {
+    path: 'section29',
+    component: Section29Component
+  },
+  {
+    path: 'section30',
+    component: Section30Component
+  },
+  {
+    path: 'section31',
+    component: Section31Component
+  },
+  {
+    path: 'section32',
+    component: Section32Component
   }
 ];
 
